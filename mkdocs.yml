@@ -85,6 +85,7 @@ plugins:
     - htmlproofer:
         enabled: !ENV [CHECK_BROKEN_LINKS, False]
         raise_error_after_finish: true
+    - include-markdown
     - redirects:
         redirect_maps:
             'gh-actions/automatic.md': 'browser/automatic.md'
